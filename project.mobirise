@@ -1,0 +1,153 @@
+{
+  "settings": {
+    "name": "Galxe",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2.5,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.2,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#060708"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.0",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/galxe_1.png",
+    "imageResize": true,
+    "usedWebp": true,
+    "mbrsiteDomain": "bz3ifllfb1",
+    "robotsSwitcher": true,
+    "sitemapSwitcher": true,
+    "sitemapSwitcherAuto": "on",
+    "siteUrl": "https://galxex.github.io/",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.0",
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://galxex.github.io/sitemap.xml\n\n\n\n\n\n\n\n"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Galxe™ | Galxe Web3 | Official Website",
+        "meta_descr": "Galxe's mission is to cultivate genuine connections between global citizens and brands through innovative blockchain solutions.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image4\" group=\"Images & Videos\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://galxe.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/galxe.png\" alt=\"Galxe\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tZDHvjNQYl",
+          "_anchor": "image04-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "1.5rem"
+              },
+              "@media (min-width: 768px)": {
+                "padding": "2.25rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#060708\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#060708\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Galxe™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Shipping options</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b><a href=\"https://galxex.github.io/\" class=\"text-primary\"><b>Galxe</b></a>: Empowering the Future of Decentralized Asset Management\n</b><br>\n<br><b>Introduction:\n</b><br>\n<br>In the rapidly evolving landscape of decentralized finance (DeFi), innovative platforms are emerging to address the challenges associated with managing digital assets effectively. One such platform is <a href=\"https://galxe.com/\" class=\"text-primary\"><b>Galxe</b></a>, a groundbreaking project that aims to revolutionize decentralized asset management. In this article, we will explore the features, benefits, and potential impact of Galxe in reshaping the future of asset management in the decentralized ecosystem.\n<br>\n<br><b>Understanding Galxe:\n</b><br>a. Introduction to Galxe: Galxe is a decentralized asset management platform built on blockchain technology. It provides users with a comprehensive suite of tools and services to manage and optimize their digital asset portfolios. Galxe leverages the principles of decentralized finance to offer a secure, transparent, and efficient solution for asset management.\n<br>\n<br>b. Decentralized Governance: One of the key features of Galxe is its decentralized governance model. The platform incorporates a community-driven decision-making process, allowing token holders to participate in shaping the future of the platform. Through voting mechanisms, token holders can propose and vote on various protocol upgrades, fee structures, and other important decisions, ensuring a fair and inclusive governance system.\n<br>\n<br>c. Automated Portfolio Management: Galxe offers users the ability to automate their asset management strategies using smart contracts. Users can set predefined rules and parameters for buying, selling, and rebalancing their assets based on specific market conditions. This automation eliminates the need for constant manual monitoring and allows users to optimize their portfolios efficiently.\n<br>\n<br>d. Liquidity Provision: Galxe facilitates liquidity provision through its decentralized liquidity pools. Users can deposit their assets into these pools, earning rewards in the form of transaction fees and other incentives. By participating in liquidity provision, users contribute to the overall liquidity of the platform and benefit from the potential returns generated by their deposited assets.\n<br>\n<br><b>Key Features and Benefits of Galxe:\n</b><br>a. Diversification and Risk Management: Galxe enables users to diversify their digital asset portfolios across a wide range of tokens and assets. By spreading their investments, users can mitigate risks and reduce exposure to any single asset. Additionally, Galxe provides risk management tools, such as stop-loss orders and risk assessment metrics, to help users make informed decisions and manage their risk profiles effectively.\n<br>\n<br>b. Yield Optimization: The platform offers various yield optimization strategies to help users maximize returns on their digital assets. Through automated yield farming, users can participate in DeFi protocols to earn additional rewards and yield on their assets. Galxe identifies the most profitable opportunities across different protocols and automatically allocates users' assets to optimize their yield farming strategies.\n<br>\n<br>c. Transparent and Secure: Galxe prioritizes transparency and security. The platform operates on blockchain technology, ensuring all transactions and operations are recorded on an immutable ledger. This transparency provides users with complete visibility into their portfolio performance and the underlying operations of the platform. Additionally, Galxe implements robust security measures to protect user funds and personal information, reducing the risk of hacking or unauthorized access.\n<br>\n<br>d. Accessibility and Inclusivity: Galxe aims to make asset management accessible to a broader audience. With a user-friendly interface and intuitive design, the platform caters to both experienced users and newcomers to DeFi. Galxe also eliminates the need for intermediaries, enabling users to have direct control over their assets. This democratization of asset management empowers individuals and promotes financial inclusivity.\n<br>\n<br><b>Impact and Future of Galxe:\n</b><br>a. Redefining Traditional Asset Management: Galxe has the potential to disrupt traditional asset management models by offering a decentralized alternative. The platform's transparency, automation, and community-driven governance provide users with greater control, efficiency, and flexibility in managing their assets. As more users recognize the benefits of decentralized asset management, Galxe could significantly reshape the financial industry.\n<br>\n<br>b. Driving DeFi Adoption: Galxe contributes to the broader adoption of DeFi by providing a user-friendly and secure platform for asset management. With its focus on accessibility and inclusivity, Galxe attracts a wider audience to participate in the decentralized economy. This increased participation and adoption contribute to the maturation and expansion of the DeFi ecosystem as a whole.\n<br>\n<br>c. Collaboration and Integrations: Galxe actively pursues collaborations and integrations with other DeFi protocols and projects. By integrating with complementary platforms, Galxe expands its capabilities and provides users with access to a broader range of investment opportunities. These collaborations foster an interconnected DeFi ecosystem, where users can leverage multiple protocols seamlessly.\n<br>\n<br>d. Evolution of DeFi Asset Management: As Galxe continues to develop and evolve, it is likely to introduce new features and services that enhance the asset management experience. These may include advanced analytics tools, customizable investment strategies, and integration with emerging DeFi trends. Galxe remains at the forefront of innovation in decentralized asset management, driving the industry forward.\n<br>\n<br><b>Conclusion:\n</b><br>\n<br>Galxe represents a paradigm shift in decentralized asset management. With its decentralized governance, automated portfolio management, and emphasis on transparency andsecurity, Galxe offers users a powerful and inclusive platform to manage their digital assets. By enabling diversification, optimizing yields, and promoting financial inclusivity, Galxe is poised to reshape the future of asset management in the decentralized finance ecosystem.\n<br>\n<br>As Galxe continues to evolve and gain traction, it has the potential to redefine traditional asset management models and drive broader adoption of decentralized finance. With its commitment to transparency, security, and community-driven governance, Galxe empowers users to take control of their assets and participate in the decentralized economy with confidence.\n<br>\n<br>The future of Galxe holds exciting possibilities for the development of advanced features, collaborations, and integrations that will further enhance the asset management experience. As the decentralized finance space continues to grow and mature, Galxe remains at the forefront of innovation, shaping the landscape of decentralized asset management and contributing to the realization of a more inclusive and efficient financial ecosystem.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tZDHw1OYZE",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
